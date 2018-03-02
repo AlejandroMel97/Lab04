@@ -1,0 +1,70 @@
+<html>
+  <head>
+      <title>Online Shop</title>
+        <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form name = "myForm" action="customerBackend.php" onsubmit="return validateForm()" method="post">
+        <center>
+        <div class = "jersey" id="kobe1">
+          <h3>Kobe Bryant - Laker Jersey</h3>
+          <img src="kobe.jpg" id="kobe" width="340" height="340">
+          <p> Price: $80.00 <br><br>Input quantity: <input type="number" name="Kobe_Bryant" value="0" ></p>
+          <!-- <font color="white">|--------Shipping--------|</font>
+          <br><br> -->
+          <!-- <div class ="ship">
+            <input type="radio" name="shipping1" value="Free 7 day"> Free 7 day<br>
+            <input type="radio" name="shipping1" value="$50.00 over night"> $50.00 over night<br>
+            <input type="radio" name="shipping1" value="$5.00 three day"> $5.00 three day<br>
+          </div> -->
+        </div>
+        <div class ="jersey" id = "curry1">
+          <p> <h3> Steph Curry - Warriors Jersey</h3></p>
+          <img src="curry.jpg" id = "curry" width="340" height="340">
+          <p>Price : $120.00<br><br> Input quantity:<input type="number" name = "Steph_Curry" value="0" ></p>
+          <!-- <font color="white">|--------Shipping--------|</font> -->
+          <!-- <br><br> -->
+          <!-- <div class ="ship">
+            <input type="radio" name="shipping2" value="Free 7 day"> Free 7 day<br>
+            <input type="radio" name="shipping2" value="$50.00 over night"> $50.00 over night<br>
+            <input type="radio" name="shipping2" value="$5.00 three day"> $5.00 three day<br>
+          </div> -->
+        </div>
+        <div class = "jersey" id = "lebron1">
+          <h3> Lebron James - Cavaliers Jersey</h3>
+          <img src="lebron.jpg" id = "lebron" width="340" height="340">
+          <p> Price: $130.00 <br><br> Input quantity:<input type="number" name = "Lebron_James" value="0" ></p>
+          <!-- <font color="white">|--------Shipping--------|</font>
+          <br><br> -->
+          <!-- <div class ="ship">
+            <input type="radio" name="shipping3" value="Free 7 day"> Free 7 day<br>
+            <input type="radio" name="shipping3" value="$50.00 over night"> $50.00 over night<br>
+            <input type="radio" name="shipping3" value="$5.00 three day"> $5.00 three day<br>
+          </div> -->
+        </div>
+        <div class = "jersey" id="ku1">
+          <h3> Paul Pierce - Kansas University Jersey</h3>
+          <img src="Ku.jpg" id = "ku" width="340" height="340">
+          <p> Price: $200.00 <br><br>Input quantity:<input type="number" name = "Paul_Pierce" value="0" ></p>
+          <!-- <font color="white">|--------Shipping--------|</font>
+          <br><br> -->
+        </div>
+    </center>
+    <div class = "button">
+		<center>----Shipping----</center>
+      <center><div class ="ship">
+        <input type="radio" name="shipping" value="Free 7 day"> Free 7 day<br>
+        <input type="radio" name="shipping" value="$50.00 Over night"> $50.00 over night<br>
+        <input type="radio" name="shipping" value="$5.00 Three day"> $5.00 three day<br>
+      </div></center>
+      <center><br>Enter Email: <input id="emailAddress" type="text" name = "email"><br>
+      Enter Password: <input id="userPassword" type="password" name = "pass">
+      <br>
+      <button type="submit" value="Submit">Submit</button>
+      <button type="reset" value="Reset">Reset</button></center>
+    </div>
+  </form>
+  <script src="formChecker.js"> </script>
+  </body>
+
+</html>
